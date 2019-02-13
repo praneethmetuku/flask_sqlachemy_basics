@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My electronics</title>
+</head>
+<body>
+
+    <h1> MY daily gadgets are:-</h1>
+
+<table>
+    <tr>
+        <th>Gadget type</th>
+        <th>Gadget name</th>
+
+    </tr>
+            {% for i,j in my_electronics.items() %}
+    <tr>
+
+        <td>{{i|upper()}}</td>
+        <td>{{j|title()}}</td>
+    </tr>
+        {% endfor %}
+
+    </table>
+
+</body>
+</html>
+
